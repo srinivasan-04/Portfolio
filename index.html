@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PortFolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="responsive.css">
+    <link rel="stylesheet" href="animate.css">
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+  />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+ 
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    
+</head>
+<body>
+    <header class="head">
+        <span> <p>Portfolio</p></span>
+        <nav class="navbar">
+            <ul class="navlink">
+                <li><a href="#home" class="active">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#project">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+        <div class="navhidden">
+          <i class="fa-solid fa-bars"></i>
+        </div>
+
+        <div class="dropdown-menu">
+          <li><a href="#home" class="active">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#services">Services</a></li>
+          <li><a href="#project">Projects</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </div>  
+    </header>
+
+    <script>
+      const navHidden = document.querySelector('.navhidden');
+      const navHiddenIcon = document.querySelector('.navhidden i');
+      const dropdown = document.querySelector('.dropdown-menu');
+      
+      navHidden.onclick = ()=>{
+        dropdown.classList.toggle('open');
+        const isOpen  = dropdown.classList.contains('open')
+        navHiddenIcon.classList=isOpen
+        ? 'fa-solid fa-xmark' : 'fa-solid fa-bars'
+      }
+    </script>
+
+    
+    <section class="home" id="home">
+        <div class="home-class1"> 
+            <h4>Hello, I am</h4>
+        <h1>Srinivasan</h1>
+            <h3>I'm a <span>Web Developer</span></h3>
+            <p>And I'm looking for a job</p>
+            <button>Hire me</button>
+            <button class="button2"> Download CV</button>
+        </div>
+        <div class="home-img">
+            <img src="img/file (1).png" alt="img" width="600px" height="500px">
+        </div>
+
+    </section>
+
+    <section class="about" id="about">
+      <div class="about-class1">
+        <div class="about-class">
+        <h1>About ME </h1><br>
+        <p>"Hello! I'm Srinivasan, a passionate web developer with a knack for creating dynamic and user-friendly websites. With a strong background in problem-solving and web development, I am constantly seeking new challenges and opportunities to grow. <br> began my journey into web development by learning the fundamentals of coding and design. Over time, I have honed my skills through various projects and internships, allowing me to gain hands-on experience in creating efficient and visually appealing websites."</p>
+    </div>
+   
+    <div class="about-skill">
+        <div class="card card-1">
+            <div class="card-inner">
+              <div class="card-front">
+                <p class="card-text"> <p class="text">Skills</p> </p>
+              </div>
+              <div class="card-back">
+                <p><ul>
+                    <li>Front-End Development</li>
+                    <li>Back-End Development</li>
+                    <li>UI/UX Design</li>
+                    <li>Problem-Solving</li>
+                    <li>Responsive Design</li>
+                </ul></p>
+                <!-- <button>Know More</button> -->
+              </div>
+            </div>
+          </div>
+          <!-- <div class="card card-2">
+            <div class="card-inner">
+              <div class="card-front">
+                <p class="text">Experience</p>
+              </div>
+              <div class="card-back">
+                <p>Web Developer Intern at Octanet
+                  Gained experience in working with client specifications and delivering high-quality results.</p>
+              </div>
+            </div>
+          </div>  -->
+
+          <div class="card card-3">
+            <div class="card-inner">
+              <div class="card-front">
+                <p class="text">Education</p>
+              </div>
+              <div class="card-back">
+                <p class="card-3para"> B.Tech in Information Technology<br>
+                    Institution: PSNA CET<br>
+                    Location: Dindigul<br>
+                    Attended: 2022 - 2026</p>
+        
+              </div>
+            </div>
+          </div>
+          
+          
+    </div>
+  </div>
+    </section>
+    <br>
+    <section class="my-service" id="services">
+        <div>
+        <h1>My Services</h1>
+    </div>
+        <div class="outer-container project">
+            <div class="inner-container inner-1"><i class="fa-solid fa-code" style="color: #00FF00;"></i>
+                <h5>Web Development</h5>
+                <div>
+                   <p> "I specialize in developing responsive and user-friendly websites tailored to meet your specific needs. Whether you're looking to establish an online presence, launch an e-commerce platform, or revamp your existing website, I can help bring your vision to life."</p>
+                </div>
+            </div>
+            <div class="inner-container inner-2">
+                <i class="fa-solid fa-laptop-code"></i>
+                <h5>UI/UX Design</h5>
+                <div>
+                   <p> "Prioritizing user experience, I design intuitive interfaces that guide users through your website effortlessly. I focus on usability and aesthetics to ensure your website not only functions well but also leaves a lasting impression."</p>
+                </div>
+
+            </div>                         
+            <div class="inner-container inner-3">
+                <i class="fa-regular fa-image"></i>
+                <h5>Front-End Development</h5>
+                <div>
+                   <p> "I excel in front-end technologies such as HTML, CSS, and JavaScript, ensuring your website not only looks stunning but also provides a seamless user experience across devices."</p>
+                </div>
+
+            </div>
+        </div> 
+
+    </section>
+    <section class="project" id="project">
+      <div class="project-class">
+        <div>  
+          <h1 class="my-project">My Projects</h1>
+        </div>
+        <div class="outer-container">
+          <div class="inner-container-2 inner-1">
+            <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
+              <div class="hovereffect">
+                  <img class="img-responsive" src="img/e_commerce-transformed.jpeg" alt="">
+                      <div class="overlay">
+                          <h2>E-Commerce Sites</h2>
+                      </div>
+              </div>
+            </div>
+         
+      </div> 
+      <div class="inner-container-2">
+        <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
+          <div class="hovereffect">
+              <img class="img-responsive" src="img/mobileapp-transformed_cleanup.jpeg" alt="">
+                  <div class="overlay">
+                      <h2>App Development </h2>
+                  </div>
+          </div>
+        </div>
+
+      </div>
+      <div class="inner-container-2 inner-1">
+        <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
+          <div class="hovereffect">
+              <img class="img-responsive" src="img/ui.jpg" alt="">
+                  <div class="overlay">
+                      <h2>Ui/Ux design</h2>
+                  </div>
+          </div>
+        </div>
+      </div>
+      
+      </div>
+    </div>
+
+     </section>
+    <section id="contact">
+      <div class="row"> <h1>Contact Me</h1></div>
+      <div class="container">
+        <div class="contact-inner">
+          
+          <p class="mail"> <i class="fa-solid fa-envelope"></i> <a href="mailto:srinivasdeepa04@gmail.com">mail</a></p>
+          <p> <i class="fa-solid fa-phone"></i> +91 9345856780</p>
+          <div class="contact-para"><p>"If you have any questions or project inquiries, please fill out the form  and I'll get back to you as soon as possible."</p></div>
+          <div class="icons">
+            <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+            <a href="#"><i class="fa-brands fa-github"></i></a>
+            <a href="#"><i class="fa-brands fa-whatsapp"></i></a>
+            <a href="#"><i class="fa-brands fa-instagram"></i></a>
+            </div>
+        </div>
+
+        <div class="contact-inner contact-form">
+          <form  id="form">
+            <input type="text" name="name" placeholder="Enter your name" id="name" required>
+            <input type="text" name="email" placeholder="Enter your mail id" id="mail" required>
+            <textarea name="message"row="6" placeholder="your message" ></textarea>
+            <button value="Submit" onclick="validate(event)">Submit</button>
+          </form>
+      </div>
+      <script>
+        function validate(e){
+          e.preventDefault(); 
+         alert("Thank you for contacting me. I'll get back to you as soon as possible");
+        }
+      </script>
+      </div>
+      <div class="copyright">
+        <hr>
+        <p>&copy; 2024 Srinivasan. All rights reserved. | <a href="mailto:srinivasdeepa04@gmail.com">Contact Me</a></p>
+      </div>
+
+    </section>
+</body>
+</html>

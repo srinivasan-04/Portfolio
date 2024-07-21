@@ -1,0 +1,237 @@
+/* Add responsive design for tablet devices */
+@media (min-width: 769px) and (max-width: 1024px) {
+    /* Header */
+      header {
+        text-align: center;
+        top: 0;
+        
+      }
+      header p {
+        font-size: 20px;
+      }
+      .navbar .navlink{
+          display: none;
+      }
+      .navhidden{
+          display: block;
+        }  
+        .dropdown-menu{
+          width: 100%;
+        }
+    /* Home section */
+    .home {
+      flex-direction: row;
+      padding: 40px;
+      width: 100%;
+      height: 100svh;
+    }
+    .home-class1 {
+      font-size: 24px;
+      width: 100%;
+    }
+    .home-class1 p {
+      font-size: 18px;
+    }
+    .home-class1 button {
+      padding: 12px;
+      font-size: 14px;
+    }
+    .home-img img {
+      max-width: 400px;
+    }
+  
+    
+    /* About section */
+    .about {
+      margin: 30px;
+      width: 100%;
+    }
+    .about-class {
+      margin: 20px;
+      padding: 20px;
+      width: 100%;
+    }
+    .about-class h1 {
+      font-size: 30px;
+    }
+    .about-class p {
+      font-size: 20px;
+    }
+  
+    /* Service section */
+    .my-service {
+      margin: 20px;
+    }
+    .outer-container {
+      flex-direction: row;
+    }
+    .inner-container {
+      width: 40%;
+      height: 40%;
+      margin: 20px;
+    }
+    .inner-container::before {
+      height: 200px;
+      width: 20px;
+    }
+    .my-service h1 {
+      font-size: 36px;
+    }
+    .my-service i {
+      font-size: 36px;
+    }
+    .my-service h5 {
+      font-size: 20px;
+    }
+    .my-service p {
+      font-size: 16px;
+    }
+    .card {
+      display: flex;
+      flex-direction: column;
+      width: 100px;
+    }
+  }
+/* Add responsive design for mobile devices */
+@media (max-width: 768px) {
+    /* Header */
+    header {
+      text-align: center;
+      top: 0;
+      
+    }
+    header p {
+      font-size: 20px;
+    }
+    .navbar .navlink{
+        display: none;
+    }
+    .navhidden{
+        display: block;
+      }  
+      .dropdown-menu{
+        width: 100%;
+      }
+    /* Home section */
+    .home {
+      flex-direction:row;
+      padding: 20px;
+      width: 100%;
+      position: relative;
+      padding: 70px 10% 0;
+      flex-wrap: wrap;
+  
+    }
+    .home-class1 {
+      font-size: 20px;
+    }
+    .home-class1 p {
+      font-size: 16px;
+    }
+    .home-class1 button {
+      padding: 8px;
+      font-size: 12px;
+    }
+    .home-img img {
+      max-width: 290px;
+      max-height: 280px;
+    }
+  
+    /* About section */
+    .about {
+      margin: 10px;
+    }
+    .about-class {
+      margin: 10px;
+      padding: 10px;
+    }
+    .about-class h1 {
+      font-size: 24px;
+    }
+    .about-class p {
+      font-size: 18px;
+    }
+  
+    .about-skill{
+      display: flex;
+      justify-content:space-between;
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .card {
+      width: 60%;
+      height: 340px;
+      border-radius: 30%;
+      margin: 10%;
+    }
+    .card-inner {
+      width: 100%;
+      height: 100%;
+      position: relative;
+    }
+  
+    /* Service section */
+    .my-service {
+      margin-top: 300%;
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .inner-container {
+      width: 80%;
+      height: 80%;
+      margin: 10px;
+    }
+    .inner-container::before {
+      height: 150px;
+      width: 15px;
+    }
+    .my-service h1 {
+      font-size: 30px;
+    }
+    .my-service i {
+      font-size: 30px;
+    }
+    .my-service h5 {
+      font-size: 18px;
+    }
+    .my-service p {
+      font-size: 14px;
+    }
+    .project-class{
+      margin-top: 200%;
+    }
+    #contact{
+      margin-top: 200%;
+      height: 100svi;
+    }
+    .container{
+      font-size: 10px;
+      display: flex;
+      flex-direction: column;
+      margin: 0px;
+      padding: 5px;
+      width: 100%;
+    }
+    .contact-inner{
+      width: 100%;
+      text-align: center;
+      padding: 10px;
+      font-size: 20px;
+    }
+    .copyright{
+      font-size: 14px;
+      margin-top: 70%;
+    }
+    .card-front p{
+      font-size: 20px;
+    }
+    .card-back li {
+      font-size: 15px;
+    }
+    .card-back p{
+      font-size: 15px;
+    }
+  }
+  
